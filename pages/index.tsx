@@ -1,9 +1,10 @@
 import type { NextPage } from "next";
-import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 import * as ga from "../lib/ga";
 import Meta from "../components/Meta";
+import Header from "../components/Header";
 
 const Home: NextPage = () => {
 	const track = (action: string, params: string) => {
@@ -12,44 +13,44 @@ const Home: NextPage = () => {
 
 	return (
 		<>
-			<Meta title="Home | kimjanssens.be" />
-			<div className="flex flex-col-reverse items-center sm:flex-row">
-				<div className="w-full sm:w-1/2 p-8 sm:p-16 flex flex-col items-center justify-center">
-					<h1 className="font-raleway text-5xl sm:text-7xl mb-8">
-						Web Developer // Designer
-					</h1>
-					<p className="font-raleway text-base sm:text-lg mb-8">
-						JavaScript developer with a focus on Angular and React & PHP
-						developer with a history in Drupal. Web and Logo designer. Passion
-						for sports, movies and games. Currently residenting in Mechelen,
-						Belgium.
-					</p>
-					<div className="flex flex-col items-center justify-items-start w-full sm:flex-row">
-						<Link href="mailto:hello@kimjanssens.be" passHref>
+			<Meta title="Kim Janssens" />
+			<Header />
+
+			<div id="homepage" className="flex items-center h-screen">
+				<div className="container mx-auto px-4">
+					<div className="max-w-3xl">
+						<p className="font-raleway text-base sm:text-lg text-turquoise-blue tracking-widest mb-4">
+							Hallo, mijn naam is
+						</p>
+						<h1 className="font-raleway font-semibold text-snow text-5xl sm:text-7xl mb-2">
+							Kim Janssens.
+						</h1>
+						<h2 className="font-raleway font-semibold text-5xl sm:text-7xl text-silver mb-8">
+							Ik maak websites.
+						</h2>
+						<p className="font-raleway text-silver text-base sm:text-lg mb-8">
+							Ik ben frontend developer met ervaring in Angular, React en Vue.
+							PHP developer met een verleden in Drupal. Logo designer. Full-time
+							in dienst bij{" "}
+							<Link href="https://www.ellipsis-agency.com/">
+								<a
+									target="_blank"
+									className="text-turquoise-blue hover:underline"
+								>
+									Ellipsis
+								</a>
+							</Link>
+							. Woonachtig te Tisselt, België.
+						</p>
+						<Link href="mailto:hello@kimjanssens.be">
 							<a
-								className="font-raleway text-base sm:text-lg uppercase text-black block border-2 border-solid border-black px-4 py-2 hover:bg-black hover:text-white ease-in-out duration-300 sm:mr-4 mb-4 w-full sm:w-auto text-center"
+								className="font-raleway text-base sm:text-lg text-turquoise-blue inline-block border-2 border-solid border-turquoise-blue px-4 py-2 hover:bg-turquoise-blue hover:text-prussian-blue ease-in-out duration-300 sm:mr-4 mb-4 text-center"
 								onClick={() => track("view_item", "contact")}
 							>
-								Contact
-							</a>
-						</Link>
-						<Link href="/documents/curriculum_vitae.pdf" passHref>
-							<a
-								className="font-raleway text-base sm:text-lg uppercase text-black block border-2 border-solid border-black px-4 py-2 hover:bg-black hover:text-white ease-in-out duration-300 sm:mr-4 mb-4 w-full sm:w-auto text-center"
-								onClick={() => track("view_item", "Curriculum Vitae")}
-							>
-								Curriculum Vitae
+								Stuur mij een bericht!
 							</a>
 						</Link>
 					</div>
-				</div>
-				<div className="relative h-screen-1/2 sm:h-screen w-full sm:w-1/2">
-					<Image
-						src="/images/profile.jpg"
-						alt="profile picture"
-						layout="fill"
-						className="object-cover"
-					/>
 				</div>
 			</div>
 		</>
