@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 			<Meta title="Kim Janssens" />
 			<Header />
 
-			<div id="homepage" className="flex items-center h-screen">
+			<main id="homepage" className="flex items-center h-screen">
 				<div className="container mx-auto px-4">
 					<div className="max-w-3xl">
 						<p className="font-raleway text-base sm:text-lg text-turquoise-blue tracking-widest mb-4">
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 						</Link>
 					</div>
 				</div>
-			</div>
+			</main>
 		</>
 	);
 };
