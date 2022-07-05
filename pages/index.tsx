@@ -5,6 +5,7 @@ import React from "react";
 import * as ga from "../lib/ga";
 import Meta from "../components/Meta";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
 	const track = (action: string, params: string) => {
@@ -53,6 +54,8 @@ const Home: NextPage = () => {
 					</div>
 				</div>
 			</main>
+
+			<Footer />
 		</>
 	);
 };
