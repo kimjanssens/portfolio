@@ -10,7 +10,7 @@ const MobileNavigation = ({ open, setOpen }) => {
 			<nav className="flex flex-col text-center justify-center h-full">
 				<Link href="/">
 					<a
-						className="font-raleway text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
+						className="font-ibm text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
 						onClick={() => setOpen(!open)}
 					>
 						Home
@@ -18,7 +18,7 @@ const MobileNavigation = ({ open, setOpen }) => {
 				</Link>
 				<Link href="/over">
 					<a
-						className="font-raleway text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
+						className="font-ibm text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
 						onClick={() => setOpen(!open)}
 					>
 						Over
@@ -26,7 +26,7 @@ const MobileNavigation = ({ open, setOpen }) => {
 				</Link>
 				<Link href="/contact">
 					<a
-						className="font-raleway text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
+						className="font-ibm text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
 						onClick={() => setOpen(!open)}
 					>
 						Contact

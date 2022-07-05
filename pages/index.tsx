@@ -20,7 +20,7 @@ const Home: NextPage = () => {
 			<main id="homepage" className="flex items-center h-screen">
 				<div className="container mx-auto px-4">
 					<div className="max-w-3xl">
-						<p className="font-raleway text-base sm:text-lg text-turquoise-blue tracking-widest mb-4">
+						<p className="font-ibm text-base sm:text-lg text-turquoise-blue tracking-widest mb-4">
 							Hallo, mijn naam is
 						</p>
 						<h1 className="font-raleway font-semibold text-snow text-5xl sm:text-7xl mb-2">
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
 						</p>
 						<Link href="mailto:hello@kimjanssens.be">
 							<a
-								className="font-raleway text-base sm:text-lg text-turquoise-blue inline-block border-2 border-solid border-turquoise-blue px-4 py-2 hover:bg-turquoise-blue hover:text-prussian-blue ease-in-out duration-300 sm:mr-4 mb-4 text-center"
+								className="font-ibm text-base sm:text-lg text-turquoise-blue inline-block border-2 border-solid border-turquoise-blue px-4 py-2 hover:bg-turquoise-blue hover:text-prussian-blue ease-in-out duration-300 sm:mr-4 mb-4 text-center"
 								onClick={() => track("view_item", "contact")}
 							>
 								Stuur mij een bericht!

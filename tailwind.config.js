@@ -7,6 +7,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				raleway: ["Raleway", "sans-serif"],
+				ibm: ["IBM Plex Mono", "monospace"],
 			},
 			colors: {
 				"prussian-blue": "#172A3A",
