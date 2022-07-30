@@ -5,6 +5,7 @@ import React from "react";
 import * as ga from "../lib/ga";
 import Meta from "../components/Meta";
 import Header from "../components/Header";
+import About from "../components/About";
 import Footer from "../components/Footer";
 
 const Home: NextPage = () => {
@@ -17,8 +18,8 @@ const Home: NextPage = () => {
 			<Meta title="Kim Janssens" />
 			<Header />
 
-			<main id="homepage" className="flex items-center h-screen">
-				<div className="container mx-auto px-4">
+			<section className="flex items-center h-screen">
+				<div className="container max-w-5xl mx-auto px-4">
 					<div className="max-w-3xl">
 						<p className="font-ibm text-base sm:text-lg text-turquoise-blue tracking-widest mb-4">
 							Hallo, mijn naam is
@@ -53,7 +54,9 @@ const Home: NextPage = () => {
 						</Link>
 					</div>
 				</div>
-			</main>
+			</section>
+
+			<About />
 
 			<Footer />
 		</>
