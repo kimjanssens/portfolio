@@ -51,15 +51,18 @@ const Header = () => {
 			<div className="container mx-auto px-4">
 				<div className="flex flex-wrap justify-between items-center">
 					{/* Logo */}
-					<Link href="/" passHref>
-						<a aria-label="home" onClick={() => setOpen(!open)}>
-							<Image
-								src={logo}
-								alt="Kim Janssens logo"
-								height={44}
-								width={44}
-							/>
-						</a>
+					<Link
+						href="/"
+						aria-label="home"
+						onClick={() => setOpen(!open)}
+						passHref
+					>
+						<Image
+							src={logo}
+							alt="Kim Janssens logo"
+							height={44}
+							width="auto"
+						/>
 					</Link>
 
 					{/* Mobile menu button */}

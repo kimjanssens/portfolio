@@ -34,23 +34,21 @@ const Home: NextPage = () => {
 							Ik ben frontend developer met ervaring in Angular, React en Vue.
 							PHP developer met een verleden in Drupal. Logo designer. Full-time
 							in dienst bij{" "}
-							<Link href="https://www.ellipsis-agency.com/">
-								<a
-									target="_blank"
-									className="text-turquoise-blue hover:underline"
-								>
-									Ellipsis
-								</a>
+							<Link
+								href="https://www.ellipsis-agency.com/"
+								target="_blank"
+								className="text-turquoise-blue hover:underline"
+							>
+								Ellipsis
 							</Link>
 							. Woonachtig te Tisselt, België.
 						</p>
-						<Link href="mailto:hello@kimjanssens.be">
-							<a
-								className="font-ibm text-base sm:text-lg text-turquoise-blue inline-block border-2 border-solid border-turquoise-blue px-4 py-2 hover:bg-turquoise-blue hover:text-prussian-blue ease-in-out duration-300 sm:mr-4 mb-4 text-center"
-								onClick={() => track("view_item", "contact")}
-							>
-								Stuur mij een bericht!
-							</a>
+						<Link
+							href="mailto:hello@kimjanssens.be"
+							className="font-ibm text-base sm:text-lg text-turquoise-blue inline-block border-2 border-solid border-turquoise-blue px-4 py-2 hover:bg-turquoise-blue hover:text-prussian-blue ease-in-out duration-300 sm:mr-4 mb-4 text-center"
+							onClick={() => track("view_item", "contact")}
+						>
+							Stuur mij een bericht!
 						</Link>
 					</div>
 				</div>

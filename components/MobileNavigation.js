@@ -8,29 +8,26 @@ const MobileNavigation = ({ open, setOpen }) => {
 			}`}
 		>
 			<nav className="flex flex-col text-center justify-center h-full">
-				<Link href="/">
-					<a
-						className="font-ibm text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
-						onClick={() => setOpen(!open)}
-					>
-						Home
-					</a>
+				<Link
+					href="/"
+					className="font-ibm text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
+					onClick={() => setOpen(!open)}
+				>
+					Home
 				</Link>
-				<Link href="/over">
-					<a
-						className="font-ibm text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
-						onClick={() => setOpen(!open)}
-					>
-						Over
-					</a>
+				<Link
+					href="/over"
+					className="font-ibm text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
+					onClick={() => setOpen(!open)}
+				>
+					Over
 				</Link>
-				<Link href="/contact">
-					<a
-						className="font-ibm text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
-						onClick={() => setOpen(!open)}
-					>
-						Contact
-					</a>
+				<Link
+					href="/contact"
+					className="font-ibm text-xl text-snow py-6 hover:text-turquoise-blue transition ease-in-out duration-300"
+					onClick={() => setOpen(!open)}
+				>
+					Contact
 				</Link>
 			</nav>
 		</aside>

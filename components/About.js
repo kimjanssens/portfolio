@@ -17,13 +17,12 @@ const About = () => {
 							interesse in het web is pas echt gekomen na een webdesign
 							opleiding van 1 jaar bij Tour & Taxis in Brussel. Hierna studeerde
 							ik af als{" "}
-							<Link href="https://weareimd.be/">
-								<a
-									target="_blank"
-									className="text-turquoise-blue hover:underline"
-								>
-									Interactive Multimedia Designer
-								</a>
+							<Link
+								href="https://weareimd.be/"
+								target="_blank"
+								className="text-turquoise-blue hover:underline"
+							>
+								Interactive Multimedia Designer
 							</Link>{" "}
 							(IMD) aan de Thomas More hogeschool in Mechelen
 						</p>
@@ -32,13 +31,12 @@ const About = () => {
 							begonnen als PHP developer met de focus op Drupal. 3 jaar later
 							besloot ik om de JavaScript wereld in te duiken, en geniet ik nu
 							van Angular, React & Vue. Momenteel ben ik full-time in dienst bij{" "}
-							<Link href="https://www.ellipsis-agency.com/">
-								<a
-									target="_blank"
-									className="text-turquoise-blue hover:underline"
-								>
-									Ellipsis
-								</a>
+							<Link
+								href="https://www.ellipsis-agency.com/"
+								target="_blank"
+								className="text-turquoise-blue hover:underline"
+							>
+								Ellipsis
 							</Link>
 						</p>
 					</div>
@@ -46,7 +44,6 @@ const About = () => {
 						<Image
 							src={profilePicture}
 							alt="Kim Janssens profielfoto"
-							layout="responsive"
 							className="grayscale hover:grayscale-0 transition duration-500 ease-in-out"
 						/>
 					</div>
