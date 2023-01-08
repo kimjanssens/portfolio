@@ -1,10 +1,12 @@
+"use client"; // You only need to mark components as 'use client' when they use client hooks such as useState or useEffect.
+
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-import * as ga from '../lib/ga';
+import * as ga from "../lib/ga";
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const router = useRouter();
