@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 
 import logo from "../public/logo.svg";
 import MenuButton from "./MenuButton";
@@ -51,19 +54,21 @@ const Header = () => {
 			<div className="container mx-auto px-4">
 				<div className="flex flex-wrap justify-between items-center">
 					{/* Logo */}
-					<Link
-						href="/"
-						aria-label="home"
-						onClick={() => setOpen(!open)}
-						passHref
-					>
-						<Image
-							src={logo}
-							alt="Kim Janssens logo"
-							height={44}
-							width="auto"
-						/>
-					</Link>
+					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+						<Link
+							href="/"
+							aria-label="home"
+							onClick={() => setOpen(!open)}
+							passHref
+						>
+							<Image
+								src={logo}
+								alt="Kim Janssens logo"
+								height={44}
+								width="auto"
+							/>
+						</Link>
+					</motion.div>
 
 					{/* Mobile menu button */}
 					<MenuButton open={open} setOpen={setOpen} />

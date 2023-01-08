@@ -1,26 +1,52 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Navigation = () => {
+	const MotionLink = motion(Link);
 	return (
 		<nav className="hidden w-full md:block md:w-auto">
-			<Link
+			<MotionLink
+				initial={{ opacity: 0, y: -50 }}
+				whileInView={{
+					opacity: 1,
+					y: 0,
+					transition: {
+						delay: 0.1,
+					},
+				}}
 				href="/"
-				className="font-ibm text-sm text-snow inline-block p-3 mx-1 hover:text-turquoise-blue transition ease-in-out duration-300"
+				className="link p-3 mx-1"
 			>
 				Home
-			</Link>
-			<Link
+			</MotionLink>
+			<MotionLink
+				initial={{ opacity: 0, y: -50 }}
+				whileInView={{
+					opacity: 1,
+					y: 0,
+					transition: {
+						delay: 0.2,
+					},
+				}}
 				href="/over"
-				className="font-ibm text-sm text-snow inline-block p-3 mx-1 hover:text-turquoise-blue transition ease-in-out duration-300"
+				className="link p-3 mx-1"
 			>
 				Over
-			</Link>
-			<Link
+			</MotionLink>
+			<MotionLink
+				initial={{ opacity: 0, y: -50 }}
+				whileInView={{
+					opacity: 1,
+					y: 0,
+					transition: {
+						delay: 0.3,
+					},
+				}}
 				href="/contact"
-				className="font-ibm text-sm text-snow inline-block p-3 mx-1 hover:text-turquoise-blue transition ease-in-out duration-300"
+				className="link p-3 mx-1"
 			>
 				Contact
-			</Link>
+			</MotionLink>
 		</nav>
 	);
 };
