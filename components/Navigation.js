@@ -1,53 +1,31 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+import { staggerContainer, navVariants } from "../utils/motion";
+
 const Navigation = () => {
 	const MotionLink = motion(Link);
 	return (
-		<nav className="hidden w-full md:block md:w-auto">
-			<MotionLink
-				initial={{ opacity: 0, y: -50 }}
-				whileInView={{
-					opacity: 1,
-					y: 0,
-					transition: {
-						delay: 0.1,
-					},
-				}}
-				href="/"
-				className="link p-3 mx-1"
-			>
+		<motion.nav
+			variants={staggerContainer}
+			initial="hidden"
+			whileInView="show"
+			className="hidden w-full md:block md:w-auto"
+		>
+			<MotionLink variants={navVariants} href="/" className="link p-3 mx-1">
 				Home
 			</MotionLink>
-			<MotionLink
-				initial={{ opacity: 0, y: -50 }}
-				whileInView={{
-					opacity: 1,
-					y: 0,
-					transition: {
-						delay: 0.2,
-					},
-				}}
-				href="/over"
-				className="link p-3 mx-1"
-			>
+			<MotionLink variants={navVariants} href="/over" className="link p-3 mx-1">
 				Over
 			</MotionLink>
 			<MotionLink
-				initial={{ opacity: 0, y: -50 }}
-				whileInView={{
-					opacity: 1,
-					y: 0,
-					transition: {
-						delay: 0.3,
-					},
-				}}
+				variants={navVariants}
 				href="/contact"
 				className="link p-3 mx-1"
 			>
 				Contact
 			</MotionLink>
-		</nav>
+		</motion.nav>
 	);
 };
 
