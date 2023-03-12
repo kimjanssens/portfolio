@@ -7,6 +7,7 @@ import * as ga from "../lib/ga";
 import Meta from "../components/Meta";
 import Header from "../components/Header";
 import About from "../components/About";
+import Socials from "../components/Socials";
 import Footer from "../components/Footer";
 
 import { staggerContainer, textVariant } from "../utils/motion";
@@ -89,6 +90,8 @@ const Home: NextPage = () => {
 			</section>
 
 			<About />
+
+			<Socials github="kimjanssens" linkedin="kimjanssens90" />
 
 			<Footer />
 		</>
