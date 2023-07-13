@@ -13,6 +13,10 @@
 	transition-duration: 300ms;
 }
 
+.text-vertical {
+	writing-mode: vertical-lr;
+}
+
 .link {
 	@apply font-ibm text-sm text-snow inline-block hover:text-turquoise-blue;
 }
