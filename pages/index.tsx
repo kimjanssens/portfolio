@@ -93,7 +93,12 @@ const Home: NextPage = () => {
 
 			<About />
 
-			<Socials github="kimjanssens" linkedin="kimjanssens90" />
+			<Socials
+				github="kimjanssens"
+				linkedin="kimjanssens90"
+				instagram="kimjanssens90"
+				twitter="kimjanssens90"
+			/>
 			<Mail />
 
 			<Footer />

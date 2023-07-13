@@ -20,3 +20,9 @@
 .link {
 	@apply font-ibm text-sm text-snow inline-block hover:text-turquoise-blue;
 }
+
+@media (min-width: 768px) {
+	.line-after {
+		@apply after:block after:w-[1px] after:h-20 after:bg-slate-300 after:m-auto after:mt-4;
+	}
+}

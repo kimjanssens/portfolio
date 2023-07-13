@@ -15,14 +15,14 @@ const Socials = ({
 	twitter = "",
 }) => {
 	return (
-		<nav className="flex flex-col fixed bottom-0 left-5 after:block after:w-[1px] after:h-20 after:bg-slate-300 after:m-auto after:mt-4">
+		<nav className="flex justify-center md:flex-col md:fixed bottom-0 left-5 line-after">
 			{github && (
 				<Link
 					href={`https://github.com/${github}`}
 					target="_blank"
 					className="p-3"
 				>
-					<FiGithub className="h-6 w-6 text-silver hover:text-turquoise-blue hover:-translate-x-1 transition ease-in-out duration-300" />
+					<FiGithub className="h-5 w-5 text-silver hover:text-turquoise-blue hover:-translate-y-1 md:hover:-translate-y-0 md:hover:-translate-x-1 transition ease-in-out duration-300" />
 				</Link>
 			)}
 			{linkedin && (
@@ -31,34 +31,34 @@ const Socials = ({
 					target="_blank"
 					className="p-3"
 				>
-					<FiLinkedin className="h-6 w-6 text-silver hover:text-turquoise-blue hover:-translate-x-1 transition ease-in-out duration-300" />
+					<FiLinkedin className="h-5 w-5 text-silver hover:text-turquoise-blue hover:-translate-y-1 md:hover:-translate-y-0 md:hover:-translate-x-1 transition ease-in-out duration-300" />
 				</Link>
 			)}
 			{instagram && (
 				<Link
 					href={`https://www.instagram.com/${instagram}`}
 					target="_blank"
-					className="mr-4"
+					className="p-3"
 				>
-					<FiInstagram className="h-6 w-6 text-silver hover:text-turquoise-blue hover:-translate-x-1 transition ease-in-out duration-300" />
+					<FiInstagram className="h-5 w-5 text-silver hover:text-turquoise-blue hover:-translate-y-1 md:hover:-translate-y-0 md:hover:-translate-x-1 transition ease-in-out duration-300" />
 				</Link>
 			)}
 			{facebook && (
 				<Link
 					href={`https://www.facebook.com/${facebook}`}
 					target="_blank"
-					className="mr-4"
+					className="p-3"
 				>
-					<FiFacebook className="h-6 w-6 text-silver hover:text-turquoise-blue hover:-translate-x-1 transition ease-in-out duration-300" />
+					<FiFacebook className="h-5 w-5 text-silver hover:text-turquoise-blue hover:-translate-y-1 md:hover:-translate-y-0 md:hover:-translate-x-1 transition ease-in-out duration-300" />
 				</Link>
 			)}
 			{twitter && (
 				<Link
 					href={`https://twitter.com/${twitter}`}
 					target="_blank"
-					className="mr-4"
+					className="p-3"
 				>
-					<FiTwitter className="h-6 w-6 text-silver hover:text-turquoise-blue hover:-translate-x-1 transition ease-in-out duration-300" />
+					<FiTwitter className="h-5 w-5 text-silver hover:text-turquoise-blue hover:-translate-y-1 md:hover:-translate-y-0 md:hover:-translate-x-1 transition ease-in-out duration-300" />
 				</Link>
 			)}
 		</nav>

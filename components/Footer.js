@@ -3,7 +3,7 @@ import { BiStar, BiGitRepoForked } from "react-icons/bi";
 
 const Footer = () => {
 	return (
-		<footer className="text-center p-8">
+		<footer className="text-center pt-4 pb-8">
 			<Link
 				href="https://github.com/kimjanssens/portfolio"
 				className="font-ibm text-sm text-silver inline-block hover:text-turquoise-blue transition ease-in-out duration-300"
