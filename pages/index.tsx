@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 			<Header />
 
 			<section className="flex items-center h-screen">
-				<div className="container max-w-5xl mx-auto px-4">
+				<div className="container max-w-5xl mx-auto px-4 md:px-20">
 					<motion.div
 						variants={staggerContainer}
 						initial="hidden"

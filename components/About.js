@@ -5,8 +5,8 @@ import profilePicture from "../public/images/profile.jpg";
 
 const About = () => {
 	return (
-		<section className="flex items-center h-screen">
-			<div className="container max-w-5xl mx-auto px-4">
+		<section className="flex items-center py-24">
+			<div className="container max-w-5xl mx-auto px-4 md:px-20">
 				<h2 className="font-raleway text-snow text-3xl mb-8">Over mezelf</h2>
 				<div className="grid gap-8 grid-cols-3">
 					<div className="col-span-2">
