@@ -33,3 +33,12 @@ export const textVariant = (delay) => ({
 		},
 	},
 });
+
+export const fadeIn = {
+	hidden: {
+		opacity: 0,
+	},
+	show: {
+		opacity: 1,
+	}
+}

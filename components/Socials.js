@@ -6,6 +6,9 @@ import {
 	FiFacebook,
 	FiTwitter,
 } from "react-icons/fi";
+import { motion } from "framer-motion";
+
+import { fadeIn } from "@/utils/motion";
 
 const Socials = ({
 	github = "",
@@ -15,7 +18,12 @@ const Socials = ({
 	twitter = "",
 }) => {
 	return (
-		<nav className="flex justify-center md:flex-col md:fixed bottom-0 left-5 line-after">
+		<motion.nav
+			variants={fadeIn}
+			initial="hidden"
+			whileInView="show"
+			className="flex justify-center md:flex-col md:fixed bottom-0 left-5 line-after"
+		>
 			{github && (
 				<Link
 					href={`https://github.com/${github}`}
@@ -61,7 +69,7 @@ const Socials = ({
 					<FiTwitter className="h-5 w-5 text-silver hover:text-turquoise-blue hover:-translate-y-1 md:hover:-translate-y-0 md:hover:-translate-x-1 transition ease-in-out duration-300" />
 				</Link>
 			)}
-		</nav>
+		</motion.nav>
 	);
 };
 
