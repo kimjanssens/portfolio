@@ -32,7 +32,6 @@ const Home: NextPage = () => {
 						variants={staggerContainer}
 						initial="hidden"
 						whileInView="show"
-						viewport={{ once: true }}
 						className="max-w-3xl"
 					>
 						<motion.p
