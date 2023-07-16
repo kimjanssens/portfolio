@@ -8,7 +8,7 @@ const Mail = () => {
 		<motion.div
 			variants={fadeIn}
 			initial="hidden"
-			whileInView="show"
+			whileInView="visible"
 			className="hidden md:flex flex-col items-center fixed right-5 bottom-0 px-3 after:block after:w-[1px] after:h-20 after:bg-slate-300 after:m-auto after:mt-4"
 		>
 			<Link

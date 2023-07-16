@@ -8,7 +8,7 @@ const Navigation = () => {
 		<motion.nav
 			variants={fadeIn}
 			initial="hidden"
-			animate="show"
+			animate="visible"
 			className="hidden w-full md:block md:w-auto"
 		>
 			<Link href="/" className="link p-3 mx-1">

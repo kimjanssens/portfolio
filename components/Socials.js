@@ -21,7 +21,7 @@ const Socials = ({
 		<motion.nav
 			variants={fadeIn}
 			initial="hidden"
-			whileInView="show"
+			whileInView="visible"
 			className="flex justify-center md:flex-col md:fixed bottom-0 left-5 line-after"
 		>
 			{github && (

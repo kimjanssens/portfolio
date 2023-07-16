@@ -1,27 +1,28 @@
-export const staggerContainer = {
+export const staggerContainer = (staggerChildren, delayChildren) => ({
 	hidden: {},
-	show: {
+	visible: {
 		transition: {
-			staggerChildren: 0.5,
-		},
+			staggerChildren,
+			delayChildren,
+		  },
 	},
-};
+});
 
 export const navVariants = {
 	hidden: {
 		opacity: 0,
 	},
-	show: {
+	visible: {
 		opacity: 1,
 	},
 };
 
-export const textVariant = (delay) => ({
+export const textVariant = (delay = 0) => ({
 	hidden: {
 		y: 50,
 		opacity: 0,
 	},
-	show: {
+	visible: {
 		y: 0,
 		opacity: 1,
 		transition: {
@@ -32,11 +33,16 @@ export const textVariant = (delay) => ({
 	},
 });
 
-export const fadeIn = {
+export const fadeIn = (delay) => ({
 	hidden: {
 		opacity: 0,
 	},
-	show: {
+	visible: {
 		opacity: 1,
+		transition: {
+			type: "spring",
+			duration: 1.25,
+			delay
+		},
 	}
-}
+})
