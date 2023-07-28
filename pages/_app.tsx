@@ -6,6 +6,8 @@ import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
+import Layout from "@/components/layout";
+
 import * as ga from "../lib/ga";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -27,7 +29,11 @@ function MyApp({ Component, pageProps }: AppProps) {
 		};
 	}, [router.events]);
 
-	return <Component {...pageProps} />;
+	return (
+		<Layout>
+			<Component {...pageProps} />
+		</Layout>
+	);
 }
 
 export default MyApp;
