@@ -1,13 +1,12 @@
 module.exports = {
 	content: [
-		"./pages/**/*.{js,ts,jsx,tsx}",
-		"./components/**/*.{js,ts,jsx,tsx}",
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./components/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
 		extend: {
 			fontFamily: {
-				raleway: ["Raleway", "sans-serif"],
-				ibm: ["IBM Plex Mono", "monospace"],
+				sans: ["var(--font-inter)"],
 			},
 			colors: {
 				"prussian-blue": "#172A3A",
