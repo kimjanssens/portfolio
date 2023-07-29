@@ -11,7 +11,6 @@ const About = () => {
 
 	return (
 		<motion.section
-			id="over"
 			variants={staggerContainer}
 			initial="hidden"
 			whileInView="visible"
