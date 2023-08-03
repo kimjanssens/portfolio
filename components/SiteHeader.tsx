@@ -2,12 +2,17 @@ import Link from "next/link";
 
 export default function SiteHeader() {
 	return (
-		<header className="max-h-screen px-8 py-24 flex flex-col items-center justify-center">
-			<h1 className="text-5xl sm:text-7xl mb-8">Web Developer // Designer</h1>
+		<header className="max-h-screen px-8 py-24 flex flex-col justify-center">
+			<h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mb-4">
+				Kim Janssens
+			</h1>
+			<h1 className="text-xl sm:text-2xl font-medium tracking-tight mb-8">
+				Front-end developer at Ellipsis Agency
+			</h1>
 			<p className="text-base sm:text-lg mb-8">
-				JavaScript developer with a focus on Angular and React & PHP developer
-				with a history in Drupal. Web and Logo designer. Passion for sports,
-				movies and games. Currently residenting in Mechelen, Belgium.
+				Freelance JavaScript developer with a focus on React. PHP developer with
+				a history in Drupal. Webdesigner. Passion for sports, movies and games.
+				Currently residenting in Tisselt, Belgium.
 			</p>
 
 			<nav className="flex flex-col items-center justify-items-start w-full sm:flex-row">
