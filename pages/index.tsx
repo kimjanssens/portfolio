@@ -45,7 +45,7 @@ const Home: NextPage = () => {
 					<Image
 						src="/images/profile.jpg"
 						alt="profile picture"
-						layout="fill"
+						fill
 						className="object-cover"
 					/>
 				</div>
