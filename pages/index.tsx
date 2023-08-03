@@ -25,21 +25,19 @@ const Home: NextPage = () => {
 						Belgium.
 					</p>
 					<div className="flex flex-col items-center justify-items-start w-full sm:flex-row">
-						<Link href="mailto:hello@kimjanssens.be" passHref>
-							<a
-								className="font-raleway text-base sm:text-lg uppercase text-black block border-2 border-solid border-black px-4 py-2 hover:bg-black hover:text-white ease-in-out duration-300 sm:mr-4 mb-4 w-full sm:w-auto text-center"
-								onClick={() => track("view_item", "contact")}
-							>
-								Contact
-							</a>
+						<Link
+							href="mailto:hello@kimjanssens.be"
+							className="font-raleway text-base sm:text-lg uppercase text-black block border-2 border-solid border-black px-4 py-2 hover:bg-black hover:text-white ease-in-out duration-300 sm:mr-4 mb-4 w-full sm:w-auto text-center"
+							onClick={() => track("view_item", "contact")}
+						>
+							Contact
 						</Link>
-						<Link href="/documents/curriculum_vitae.pdf" passHref>
-							<a
-								className="font-raleway text-base sm:text-lg uppercase text-black block border-2 border-solid border-black px-4 py-2 hover:bg-black hover:text-white ease-in-out duration-300 sm:mr-4 mb-4 w-full sm:w-auto text-center"
-								onClick={() => track("view_item", "Curriculum Vitae")}
-							>
-								Curriculum Vitae
-							</a>
+						<Link
+							href="/documents/curriculum_vitae.pdf"
+							className="font-raleway text-base sm:text-lg uppercase text-black block border-2 border-solid border-black px-4 py-2 hover:bg-black hover:text-white ease-in-out duration-300 sm:mr-4 mb-4 w-full sm:w-auto text-center"
+							onClick={() => track("view_item", "Curriculum Vitae")}
+						>
+							Curriculum Vitae
 						</Link>
 					</div>
 				</div>
