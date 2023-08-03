@@ -1,16 +1,13 @@
 module.exports = {
 	content: [
-		"./pages/**/*.{js,ts,jsx,tsx}",
-		"./components/**/*.{js,ts,jsx,tsx}",
+		"./app/**/*.{js,ts,jsx,tsx,mdx}",
+		"./components/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
 		extend: {
-			fontFamily: {
-				raleway: ["Raleway", "sans-serif"],
-			},
 			height: {
-				'screen-1/2': '50vh'
-			}
+				"screen-1/2": "50vh",
+			},
 		},
 	},
 	plugins: [],
