@@ -40,8 +40,8 @@ export const metadata: Metadata = {
 		images: [
 			{
 				url: "https://kimjanssens.be/logo.svg",
-				width: 644,
-				height: 696,
+				width: 400,
+				height: 365,
 			},
 		],
 		locale: "nl_BE",
