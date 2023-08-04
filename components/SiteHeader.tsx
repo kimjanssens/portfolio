@@ -27,6 +27,9 @@ export default function SiteHeader() {
 					</Link>
 					<Link
 						href="/documents/curriculum_vitae.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+						download
 						className="text-base sm:text-lg uppercase text-black block border-2 border-solid border-black px-4 py-2 hover:bg-black hover:text-white ease-in-out duration-300 sm:mr-4 mb-4 w-full sm:w-auto text-center"
 					>
 						Curriculum Vitae
