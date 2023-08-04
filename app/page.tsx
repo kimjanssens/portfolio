@@ -8,7 +8,7 @@ export default function Page() {
 			width={1440}
 			height={1440}
 			priority
-			className="min-h-screen object-cover"
+			className="lg:min-h-screen object-cover"
 		/>
 	);
 }

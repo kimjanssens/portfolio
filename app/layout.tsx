@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 	},
 
 	description:
-		"Dit is de persoonlijke portfolio website van Kim Janssens, freelance JavaScript developer en webdesigner.",
+		"Dit is de persoonlijke portfolio website van Kim Janssens, freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
 	keywords: [
 		"Kim Janssens",
 		"webdesign",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 		"portfolio",
 		"freelance",
 		"website",
-		"willebroek",
+		"Willebroek",
 		"Tisselt",
 	],
 	openGraph: {
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
 			default: "Kim Janssens",
 		},
 		description:
-			"Dit is de persoonlijke portfolio website van Kim Janssens, freelance JavaScript developer en webdesigner.",
+			"Dit is de persoonlijke portfolio website van Kim Janssens, freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
 		url: "https://kimjansseens.be/",
 		siteName: "Kim Janssens",
 		images: [
 			{
-				url: "https://kimjanssens.be/logo.svg",
+				url: "https://kimjanssens.be/logo.png",
 				width: 400,
-				height: 365,
+				height: 400,
 			},
 		],
 		locale: "nl_BE",
@@ -58,7 +58,7 @@ export default function RootLayout({
 		<html lang="nl" className={raleway.className}>
 			<body>
 				<div className="mx-auto min-h-screen max-w-screen-xl">
-					<div className="grid grid-cols-2 gap-4">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 						<SiteHeader />
 
 						<main>{children}</main>
