@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Script from "next/script";
 import { Raleway } from "next/font/google";
 
 import "./globals.css";
@@ -13,11 +14,11 @@ const raleway = Raleway({
 export const metadata: Metadata = {
 	title: {
 		template: "%s | Kim Janssens",
-		default: "Kim Janssens",
+		default: "Kim Janssens | Webdesign in Tisselt",
 	},
 
 	description:
-		"Dit is de persoonlijke portfolio website van Kim Janssens, freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
+		"Freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
 	keywords: [
 		"Kim Janssens",
 		"webdesign",
@@ -31,10 +32,10 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: {
 			template: "%s | Kim Janssens",
-			default: "Kim Janssens",
+			default: "Kim Janssens | Webdesign in Tisselt",
 		},
 		description:
-			"Dit is de persoonlijke portfolio website van Kim Janssens, freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
+			"Freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
 		url: "https://kimjansseens.be/",
 		siteName: "Kim Janssens",
 		images: [
