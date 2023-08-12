@@ -1,10 +1,11 @@
 import { Metadata } from "next";
-import Script from "next/script";
 import { Raleway } from "next/font/google";
 
 import "./globals.css";
 
-import SiteHeader from "../components/SiteHeader";
+import SiteHeader from "@/components/SiteHeader";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import CookieBanner from "@/components/CookieBanner";
 
 const raleway = Raleway({
 	subsets: ["latin"],
@@ -57,6 +58,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="nl" className={raleway.className}>
+			<GoogleAnalytics
+				GA_MEASUREMENT_ID={`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+			/>
+
 			<body>
 				<div className="mx-auto min-h-screen max-w-screen-xl">
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -65,6 +70,8 @@ export default function RootLayout({
 						<main>{children}</main>
 					</div>
 				</div>
+
+				<CookieBanner />
 			</body>
 		</html>
 	);
