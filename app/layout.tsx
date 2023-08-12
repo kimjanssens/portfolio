@@ -3,7 +3,9 @@ import { Raleway } from "next/font/google";
 
 import "./globals.css";
 
-import SiteHeader from "../components/SiteHeader";
+import SiteHeader from "@/components/SiteHeader";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import CookieBanner from "@/components/CookieBanner";
 
 const raleway = Raleway({
 	subsets: ["latin"],
@@ -13,11 +15,11 @@ const raleway = Raleway({
 export const metadata: Metadata = {
 	title: {
 		template: "%s | Kim Janssens",
-		default: "Kim Janssens",
+		default: "Kim Janssens | Webdesign in Tisselt",
 	},
 
 	description:
-		"Dit is de persoonlijke portfolio website van Kim Janssens, freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
+		"Freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
 	keywords: [
 		"Kim Janssens",
 		"webdesign",
@@ -31,10 +33,10 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: {
 			template: "%s | Kim Janssens",
-			default: "Kim Janssens",
+			default: "Kim Janssens | Webdesign in Tisselt",
 		},
 		description:
-			"Dit is de persoonlijke portfolio website van Kim Janssens, freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
+			"Freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
 		url: "https://kimjansseens.be/",
 		siteName: "Kim Janssens",
 		images: [
@@ -56,6 +58,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="nl" className={raleway.className}>
+			<GoogleAnalytics
+				GA_MEASUREMENT_ID={`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+			/>
+
 			<body>
 				<div className="mx-auto min-h-screen max-w-screen-xl">
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -64,6 +70,8 @@ export default function RootLayout({
 						<main>{children}</main>
 					</div>
 				</div>
+
+				<CookieBanner />
 			</body>
 		</html>
 	);
