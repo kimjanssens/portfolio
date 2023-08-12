@@ -17,7 +17,7 @@ export default function CookieBanner() {
 	const handleConsent = (consent: boolean) => {
 		const newValue = consent ? "granted" : "denied";
 
-		window.gtag("consent", "update", {
+		(window as any).gtag("consent", "update", {
 			analytics_storage: newValue,
 		});
 
