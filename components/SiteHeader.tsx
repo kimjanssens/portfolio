@@ -1,9 +1,6 @@
-"use client";
-
 import Link from "next/link";
 
 import SocialsMedia from "./SocialMedia";
-import { event } from "@/lib/gtagHelper";
 
 export default function SiteHeader() {
 	return (
@@ -29,13 +26,6 @@ export default function SiteHeader() {
 					<Link
 						href="mailto:hello@kimjanssens.be"
 						className="text-base sm:text-lg uppercase text-black block border-2 border-solid border-black px-4 py-2 hover:bg-black hover:text-white ease-in-out duration-300 sm:mr-4 mb-4 w-full sm:w-auto text-center"
-						onClick={() =>
-							event({
-								action: "click",
-								category: "cta",
-								label: "Contact",
-							})
-						}
 					>
 						Contact
 					</Link>
@@ -45,13 +35,6 @@ export default function SiteHeader() {
 						rel="noopener noreferrer"
 						download
 						className="text-base sm:text-lg uppercase text-black block border-2 border-solid border-black px-4 py-2 hover:bg-black hover:text-white ease-in-out duration-300 sm:mr-4 w-full sm:w-auto text-center"
-						onClick={() =>
-							event({
-								action: "file_download",
-								category: "Downloads",
-								label: "curriculum_vitae.pdf",
-							})
-						}
 					>
 						Curriculum Vitae
 					</Link>
