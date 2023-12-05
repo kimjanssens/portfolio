@@ -1,6 +1,5 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
-
 import "./globals.css";
 
 import SiteHeader from "@/components/SiteHeader";
@@ -13,6 +12,7 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://kimjansseens.be"),
 	title: {
 		template: "%s | Kim Janssens",
 		default: "Kim Janssens | Webdesign in Tisselt",
@@ -37,11 +37,10 @@ export const metadata: Metadata = {
 		},
 		description:
 			"Freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
-		url: "https://kimjansseens.be/",
 		siteName: "Kim Janssens",
 		images: [
 			{
-				url: "https://kimjanssens.be/logo.png",
+				url: "/logo.png",
 				width: 400,
 				height: 400,
 			},
@@ -63,11 +62,20 @@ export default function RootLayout({
 			/>
 
 			<body>
-				<div className="mx-auto min-h-screen max-w-screen-xl">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+				<div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 						<SiteHeader />
 
-						<main>{children}</main>
+						<main id="content" className="pt-24 lg:py-24">
+							{children}
+
+							<footer className="text-sm text-slate-500">
+								<p>
+									Ontworpen en ontwikkeld door © 2023 Kim Janssens. Alle rechten
+									voorbehouden.
+								</p>
+							</footer>
+						</main>
 					</div>
 				</div>
 
