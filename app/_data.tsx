@@ -5,7 +5,7 @@ export const CASES = [
 			src: "/cases/jungle-wood.png",
 			alt: "Jungle Wood website",
 		},
-		tags: ["Next.js", "Vercel", "TypeScript", "Tailwind CSS"],
+		tags: ["Next.js", "Vercel", "TypeScript", "Tailwind CSS", "Nodemailer"],
 		website: "https://jungle-wood.be/",
 	},
 	{
