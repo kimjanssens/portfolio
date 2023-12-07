@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 import SiteHeader from "@/components/SiteHeader";
@@ -80,6 +81,7 @@ export default function RootLayout({
 				</div>
 
 				<CookieBanner />
+				<Analytics />
 			</body>
 		</html>
 	);
