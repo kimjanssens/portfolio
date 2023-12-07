@@ -12,14 +12,14 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://kimjansseens.be"),
+	metadataBase: new URL("https://kimjanssens.be"),
 	title: {
 		template: "%s | Kim Janssens",
 		default: "Kim Janssens | Webdesign in Tisselt",
 	},
 
 	description:
-		"Freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
+		"Freelance front-end developer en webdesigner. Uw parnter voor een professionele website op maat.",
 	keywords: [
 		"Kim Janssens",
 		"webdesign",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 			default: "Kim Janssens | Webdesign in Tisselt",
 		},
 		description:
-			"Freelance JavaScript developer en webdesigner. Uw parnter voor een professionele website op maat.",
+			"Freelance front-end developer en webdesigner. Uw partner voor een professionele website op maat.",
 		siteName: "Kim Janssens",
 		images: [
 			{
