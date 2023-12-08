@@ -22,7 +22,7 @@ export default function Home() {
 					voor District01, Studio Hyperdrive en ViaVictor.
 				</p>
 				<p className="text-base sm:text-lg mb-4">
-					Momenteel ben ik voltijds in dient bij{" "}
+					Momenteel ben ik voltijds in dienst bij{" "}
 					<Link
 						href="https://www.ellipsis-agency.com/"
 						className="text-orange-500 hover:underline"
