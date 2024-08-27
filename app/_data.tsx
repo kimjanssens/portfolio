@@ -1,5 +1,23 @@
 export const CASES = [
 	{
+		title: "Thuisverpleging Lathouwers-Huysmans",
+		image: {
+			src: "/cases/thuisverpleging-lathouwers.png",
+			alt: "Thuisverpleging Lathouwers-Huysmans website",
+		},
+		tags: ["Next.js", "Vercel", "TypeScript", "Tailwind CSS", "Nodemailer"],
+		website: "https://thuisverpleging-lathouwers.be",
+	},
+	{
+		title: "Thuisverpleging Samir & Maarten",
+		image: {
+			src: "/cases/samir-maarten.png",
+			alt: "Thuisverpleging Samir & Maarten website",
+		},
+		tags: ["Next.js", "Vercel", "TypeScript", "Tailwind CSS"],
+		website: "https://thuisverpleging-samir-maarten.be",
+	},
+	{
 		title: "Jungle Wood",
 		image: {
 			src: "/cases/jungle-wood.png",
@@ -9,22 +27,13 @@ export const CASES = [
 		website: "https://jungle-wood.be/",
 	},
 	{
-		title: "Thuisverpleging Lathouwers-Huysmans",
-		image: {
-			src: "/cases/thuisverpleging-lathouwers.png",
-			alt: "Thuisverpleging Lathouwers-Huysmans website",
-		},
-		tags: ["Next.js", "Vercel", "TypeScript", "Tailwind CSS"],
-		website: "https://thuisverpleging-lathouwers.be/",
-	},
-	{
 		title: "Car Perfection",
 		image: {
 			src: "/cases/car-perfection.png",
 			alt: "Car Perfection website",
 		},
 		tags: ["Next.js", "Vercel", "TypeScript", "Tailwind CSS"],
-		website: "https://carperfection.be/",
+		website: "https://carperfection.be",
 	},
 	{
 		title: "Huis MIO",
@@ -33,6 +42,6 @@ export const CASES = [
 			alt: "Huis MIO website",
 		},
 		tags: ["Drupal 9", "SCSS"],
-		website: "http://huismio.be/",
+		website: "http://huismio.be",
 	},
 ];
