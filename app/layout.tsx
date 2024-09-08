@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 import SiteHeader from "@/components/SiteHeader";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
-import CookieBanner from "@/components/CookieBanner";
 
 const raleway = Raleway({
 	subsets: ["latin"],
@@ -58,10 +55,6 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="nl" className={raleway.className}>
-			<GoogleAnalytics
-				GA_MEASUREMENT_ID={`${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-			/>
-
 			<body>
 				<div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -79,9 +72,6 @@ export default function RootLayout({
 						</main>
 					</div>
 				</div>
-
-				<CookieBanner />
-				<Analytics />
 			</body>
 		</html>
 	);
