@@ -26,7 +26,7 @@ export default function RootLayout({
 	return (
 		<html lang="nl">
 			<body
-				className={`${poppins.variable} antialiased flex flex-col h-screen`}
+				className={`${poppins.variable} antialiased flex flex-col h-screen text-slate-800`}
 			>
 				<AppHeader />
 				<main className="flex-grow">{children}</main>

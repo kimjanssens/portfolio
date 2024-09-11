@@ -4,7 +4,7 @@ import AppLogo from "@/components/AppLogo";
 
 const AppFooter = () => {
 	return (
-		<footer className="bg-green-100 py-20">
+		<footer className="bg-amber-100 py-20">
 			<div className="container mx-auto">
 				<div className="flex items-center justify-between">
 					<AppLogo />

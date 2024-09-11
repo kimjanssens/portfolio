@@ -20,7 +20,7 @@ const AppHeader = () => {
 					</Link>
 					<Link
 						href="/contact"
-						className="font-poppins text-base font-light bg-green-400 text-black px-5 py-3 rounded-md"
+						className="font-poppins text-base font-light bg-amber-500 text-black px-5 py-3 rounded-md"
 					>
 						Contact me
 					</Link>
