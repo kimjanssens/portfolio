@@ -6,7 +6,7 @@ import AppHeader from "@/components/AppHeader";
 import AppFooter from "@/components/AppFooter";
 
 const poppins = Poppins({
-	weight: ["300", "700"],
+	weight: ["300", "500", "700"],
 	subsets: ["latin"],
 	display: "swap",
 	variable: "--font-poppins",
