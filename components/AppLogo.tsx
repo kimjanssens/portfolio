@@ -1,9 +1,13 @@
 import Link from "next/link";
 
-const AppLogo = () => {
+const AppLogo = ({ theme = "dark" }) => {
 	return (
 		<Link href="/">
-			<h1 className="font-poppins text-4xl font-bold -tracking-wider text-slate-800">
+			<h1
+				className={`font-poppins text-4xl font-bold -tracking-wider ${
+					theme === "dark" ? "text-slate-800" : "text-white"
+				} `}
+			>
 				Kimjanssens<span className="text-amber-500">.be</span>
 			</h1>
 			<h2 className="font-poppins text-2xl font-light -tracking-wider text-amber-500">
