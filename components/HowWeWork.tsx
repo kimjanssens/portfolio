@@ -37,13 +37,11 @@ const HowWeWork = () => {
 	return (
 		<section className="py-20">
 			<div className="container mx-auto">
-				<h2 className="font-poppins text-6xl font-bold text-center mb-10">
+				<h2 className="font-poppins text-5xl font-bold text-center mb-10">
 					Werkwijze
 				</h2>
 
-				<div
-					className={`grid grid-cols-${STEPS.length} gap-5 max-w-4xl mx-auto mb-8`}
-				>
+				<div className={`grid grid-cols-5 gap-5 max-w-4xl mx-auto mb-8`}>
 					{STEPS.map((step, index) => (
 						<div
 							key={index}
@@ -94,7 +92,7 @@ const HowWeWork = () => {
 					</div>
 					<div className="col-span-5 bg-amber-500 flex items-center">
 						<div className="bg-white text-slate-800 p-20 relative right-10">
-							<h3 className="font-poppins text-5xl font-bold mb-4">
+							<h3 className="font-poppins text-4xl font-medium mb-4">
 								{STEPS[activeStep].title}
 							</h3>
 							<p className="font-poppins text-lg font-light">
